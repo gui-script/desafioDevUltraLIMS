@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio UltraLIMS</title>
+    <link rel="shortcut icon" href="https://ultralims.com.br/front/images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+    <header>
+        <h1>Desafio DEV - Ultra LIMS</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h1>Consulta de CEP</h1>
+                <label for="cep">CEP: </label>
+                <input type="text" id="cep" placeholder="Digite o CEP">
+                <button onclick="consultarCEP()">Consultar CEP</button>
+            </div>
+            <div class="inputInfo">
+                <label for="cidade">Cidade:</label>
+                <input class= type="text" id="cidade" readonly>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" readonly>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" readonly>
+            </div>
+            <h2>Histórico de CEPs consultados:</h2>
+            <ul id="registros"></ul>
+            <button onclick="gerarRegistro()">Salvar Histórico</button>
+        </section>
+
+        <section>
+            <h1>Ordenação com QuickSort</h1>
+            <form>
+                <label for="numbers">Insira números separados por vírgula:</label>
+                <input type="text" id="numbers">
+                <button type="button" onclick="sortNumbers()">Ordenar</button>
+            </form>
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Código e Design produzidos por Guilherme Klemann como pré-requisito para a participação do processo seletivo de contratação de desenvolvedor da Ultra LIMS.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
